@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# Frontend Budget app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# OF
 
-## Available Scripts
+# Full Stack Budgeting App
 
-In the project directory, you can run:
+Create a backend API using Express that performs full CRUD on a single model, `transactions`. Then, using RESTful routes, connect it to a React app.
 
-### `npm start`
+![](./assets/index-page.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![](./assets/new-page.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Overview
 
-### `npm test`
+- Follow the instructions and User Stories to meet the criteria for this project. Use Images in these instructions as a reference only.
+- Use Express to build a back-end.
+- Use `create-react-app` to build a front-end.
+- Connect the back-end and the front-end.
+- Deploy both apps so anyone can see them online.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories, Acceptance Criteria and Code Quality Rubric
 
-### `npm run build`
+You must implement all of the user stories and acceptance criteria below. After those are completed, look at and implement as many of the bonus features as you want to.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Be sure to build this out as a portfolio piece: Something you would be excited to show to a potential employer and be able to talk through the code with them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User Stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You must successfully build a minimum of 6 out of 9 features to pass this project
 
-### `npm run eject`
+#### (1) Navigation/Nav Bar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- The Nav bar allows me to navigate to the Index and New pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### (2) Index Page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- I can see a list of income and expenditures with the date, the transaction name and the amount on the Index page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- There is also an Account total visible that sums all the different expenditures and shows the user how much money they currently have.
 
-## Learn More
+#### (3) New Page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- I can click on a "New" button that takes me to the New page, with a form that lets me create a new transaction.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Once a transaction is created, I am navigated back to the Index page
 
-### Code Splitting
+#### (4) Show Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- I can see a single expenditure with more details and appropriate navigation links
 
-### Analyzing the Bundle Size
+#### (5) Edit page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- I can see a form that is pre-filled with an individual expenditure that allows me to update the expenditure. Once updated, I am taken back to the show page where I should be able to see the updated transaction, without needing to refresh the page.
 
-### Making a Progressive Web App
+- The edit form is accessible either from the Show page or Index page via button/link.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+#### (6) Delete functionality
 
-### Advanced Configuration
+- The expenditure can be deleted.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- The delete functionality is accessible either from the Show page or Index page via button/link.
 
-### Deployment
+#### (7) Account Total
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- The account total is visible either on the Index page (this is more straightforward) or in the Nav Bar (this is more challenging).
 
-### `npm run build` fails to minify
+- The account CSS changes depending on the amount. The account should show green (or similar color) if the amount is above $1000. There should be neutral/white color between $0 - $1000. And it should show a red (or similar color) if the bank account value falls below $0.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The changing color can be text, background, border, as long as it is in/near the account total and provides clarity with what it is showing.
+
+#### (8) UX/UI
+
+- There is effort to make the app styled. Forms are styled and properly labeled. The navigation is clear and easy to use, a color theme has been chosen and applied. At least one font has been chosen and applied. The app is responsive (readable/usable) across multiple screen sizes/widths.
+
+#### (9) Deployed online
+
+- I can visit the application via the internet
+
+- Netlify is configured correctly that I can send a link to the New page to someone and it works (does not give a 404)
+
+#### Bonus Feature
+
+- There is implementation of at least one bonus feature beyond what has been taught in class/required in lab/required in the rest of the criteria.
+
+- This can be a CSS framework, a new NPM package, a chart that shows the data in a new way, working with the date object instead of strings etc. Please confirm with your instructor.
