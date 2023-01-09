@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Error() {
+export default function FourZeroFour() {
   return (
     <div>
       <h1>Transaction Not Found</h1>
