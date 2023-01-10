@@ -15,6 +15,9 @@ export default function Transaction({ transaction, index }) {
       <tr>
         <td>{transaction.amount}</td>
       </tr>
+      <tr>
+        <td>{transaction.category}</td>
+      </tr>
     </div>
   )
 }
