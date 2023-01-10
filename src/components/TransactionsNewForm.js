@@ -32,7 +32,7 @@ export default function TransactionsNewform() {
       <form onSubmit={handleSubmit}>
         <label htmlFor="item_name">Item Name:</label>
         <input
-          id="name"
+          id="item_name"
           value={transaction.item_name}
           type="text"
           onChange={handleTextChange}
@@ -72,12 +72,12 @@ export default function TransactionsNewform() {
           type="text"
           name="category"
           onChange={handleTextChange}
-          placeholder="what category do this fall in"
+          placeholder="what category do this fall Transaction"
           required
         />
         <input type="submit" />
         <Link to="/transactions">
-          <button className="back_btn">Back</button>
+          <button className="bK_btn">Back</button>
         </Link>
       </form>
     </div>

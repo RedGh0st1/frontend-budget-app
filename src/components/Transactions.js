@@ -20,9 +20,13 @@ export default function Transactions() {
           <thead>
             <tr>
               <th>Recent Budget Transactions</th>
+              <br></br>
               <th>Date:</th>
+              <br></br>
               <th>Category:</th>
+              <br></br>
               <th>Amount:</th>
+              <br></br>
             </tr>
           </thead>
           <thbody>
