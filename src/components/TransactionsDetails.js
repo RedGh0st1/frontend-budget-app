@@ -13,7 +13,7 @@ export default function TransactionsDetails() {
     axios
       .get(`${API}/transactions/${index}`)
       .then((res) => setTransactions(res.data))
-      .catch((err) => navigate("*"))
+      .catch((err) => navigate("/*"))
   }, [index, navigate])
 
   function handleDelete() {
@@ -30,7 +30,7 @@ export default function TransactionsDetails() {
       </div>
       <div className="more_details">
         <h3 className="item-name"> Name: {transaction.item_name}</h3>
-        <span>Amount:</span>
+        <span>Amount 1</span>
         <p>{transaction.amount}</p>
         <br></br>
         <br></br>

@@ -29,18 +29,17 @@ export default function Transactions() {
               <br></br>
             </tr>
           </thead>
-          <thbody>
-            {transactions &
-              transactions.map((transaction, index) => {
-                return (
-                  <Transaction
-                    key={index}
-                    transaction={transaction}
-                    index={index}
-                  />
-                )
-              })}
-          </thbody>
+          <tbody>
+            {transactions.map((transaction, index) => {
+              return (
+                <Transaction
+                  key={index}
+                  transaction={transaction}
+                  index={index}
+                />
+              )
+            })}
+          </tbody>
         </table>
       </section>
     </div>

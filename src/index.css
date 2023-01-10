@@ -15,7 +15,11 @@ code {
 .navbar {
   background-color: aquamarine;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 2px 2px 4px gray;
+}
+
+.navbar h1 {
+  text-decoration: none;
 }

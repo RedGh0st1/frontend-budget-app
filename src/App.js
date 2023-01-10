@@ -10,6 +10,7 @@ import Show from "./Pages/Show"
 
 // COMPONENTS
 import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
 
 // import "./App.css"
 
@@ -25,8 +26,8 @@ function App() {
         <Route path="/transactions/:index/edit" element={<Edit />} />
         <Route path="*" element={<FourZeroFour />} />
       </Routes>
+      <Footer />
     </>
   )
 }
-
 export default App

@@ -65,16 +65,28 @@ export default function TransactionsNewform() {
           placeholder="Who was the transaction from"
           required
         />
-        <label htmlFor="category"></label>
-        <input
+        <label htmlFor="category">Category:</label>
+        <select
+          onchange={handleTextChange}
           id="category"
-          value={transaction.category}
           type="text"
-          name="category"
-          onChange={handleTextChange}
-          placeholder="what category do this fall Transaction"
-          required
-        />
+          value={transaction.category}
+        >
+          <option value="">Please pick!!</option>
+          <option value="taxes">Taxes</option>
+          <option value="savings">Savings</option>
+          <option value="groceries">Groceries</option>
+          <option value="pet_Care">Pet Care</option>
+          <option value="monthly_Bills">Monthly Bills</option>
+          <option value="income">Income</option>
+          <option value="insurance">Insurance</option>
+          <option value="food">Food</option>
+          <option value="medical">Medical</option>
+          <option value="expense">Expense</option>
+          <option value="vacation">Vacation</option>
+          <option value="rent">Rent</option>
+        </select>
+        <input type="submit" />
         <input type="submit" />
         <Link to="/transactions">
           <button className="bK_btn">Back</button>
