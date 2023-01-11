@@ -98,10 +98,10 @@ export default function TransactionsEditForm() {
           <option value="vacation">Vacation</option>
           <option value="rent">Rent</option>
         </select>
-        <input type="submit" />
+        <input type="submit" className="submit" />
       </Form>
       <Link to={`/transactions/${index}`}>
-        <button>Go BACK!</button>
+        <button className="btn_btn">Go BACK!</button>
       </Link>
     </div>
   )

@@ -3,6 +3,7 @@ import { useState } from "react"
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import { Button } from "react-bootstrap"
+import { Form } from "react-bootstrap"
 const API = process.env.REACT_APP_API_URL
 
 export default function TransactionsNewform() {
@@ -28,8 +29,8 @@ export default function TransactionsNewform() {
   }
 
   return (
-    <div className="NEW">
-      <form onSubmit={handleSubmit}>
+    <div className="new_form">
+      <Form onSubmit={handleSubmit}>
         <label htmlFor="item_name">Item Name:</label>
         <input
           id="item_name"
@@ -87,11 +88,11 @@ export default function TransactionsNewform() {
           <option value="rent">Rent</option>
         </select>
         <br></br>
-        <input type="submit" />
+        <input type="submit" className="submit" />
         <Link to="/transactions">
-          <Button className="bK_btn">Back</Button>
+          <Button className="bk_btn">Back</Button>
         </Link>
-      </form>
+      </Form>
     </div>
   )
 }

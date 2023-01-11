@@ -1,15 +1,28 @@
 import React from "react"
+import { Button, Container, Stack } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export default function NavBar() {
   return (
-    <nav className="navbar">
-      <h3 className="budget_heading">
-        <Link to="/transactions"> Transactions</Link>
-      </h3>
-      <button className="transaction_btn">
-        <Link to="/transactions">New Transaction</Link>
-      </button>
-    </nav>
+    <Container className="navbar">
+      <Stack direction="horizontal" gap="4" className="mb-4">
+        <h4 className="me-auto">
+          <Link to="/">
+            <Button className="transaction_btn">Home</Button>
+          </Link>
+        </h4>
+        <h4 className="me-auto">
+          <Link to="/transactions">
+            {" "}
+            <Button className="transaction_btn">Transactions</Button>
+          </Link>
+        </h4>
+        <h4>
+          <Link to="/transactions/new">
+            <Button className="transaction_btn"> New Transaction</Button>
+          </Link>
+        </h4>
+      </Stack>
+    </Container>
   )
 }
