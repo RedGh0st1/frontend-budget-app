@@ -10,8 +10,8 @@ import New from "./Pages/New"
 import Show from "./Pages/Show"
 
 // COMPONENTS
-import NavBar from "./components/NavBar"
-import Footer from "./components/Footer"
+import NavBar from "./Components/NavBar"
+import Footer from "./Components/Footer"
 
 // import "./App.css"
 

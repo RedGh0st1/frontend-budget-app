@@ -2,10 +2,14 @@ import React from "react"
 import { Link } from "react-router-dom"
 
 export default function Transaction({ transaction, index }) {
+  let date = new Date(transaction.date)
+  const budgetDate = new Intl.DateTimeFormat("en-us", {
+    dateStyle: "long",
+  }).format(date)
   return (
     <div className="detail">
       <tr>
-        <td>{transaction.date}</td>
+        <td>{budgetDate}</td>
       </tr>
       <tr>
         <td>

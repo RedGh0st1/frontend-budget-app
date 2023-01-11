@@ -11,37 +11,39 @@ export default function Transactions() {
     axios
       .get(`${API}/transactions`)
       .then((res) => setTransactions(res.data))
-      .catch((err) => console.err("catch", err))
+      .catch((err) => console.err(err))
   }, [])
+  const accTotal = transactions.reduce((acc, curr) => {
+    return acc + curr.amount
+  }, 0)
   return (
     <div className="index_transactions">
-      <section>
-        <table>
-          <thead>
-            <tr>
-              <th>Recent Budget Transactions</th>
-              <br></br>
-              <th>Date:</th>
-              <br></br>
-              <th>Category:</th>
-              <br></br>
-              <th>Amount:</th>
-              <br></br>
-            </tr>
-          </thead>
-          <tbody>
-            {transactions.map((transaction, index) => {
-              return (
-                <Transaction
-                  key={index}
-                  transaction={transaction}
-                  index={index}
-                />
-              )
-            })}
-          </tbody>
-        </table>
-      </section>
+      <div className="acc_total">
+        <h3>Account Total:{accTotal.toFixed(2)}</h3>
+      </div>
+
+      <table className="index_table">
+        <thead>
+          <tr>
+            <th>Recent Budget Transactions</th>
+            <th>Date:</th>
+            <th>Item:</th>
+            <th>Category:</th>
+            <th>Amount:</th>
+          </tr>
+        </thead>
+        <tbody>
+          {transactions.map((transaction, index) => {
+            return (
+              <Transaction
+                key={index}
+                transaction={transaction}
+                index={index}
+              />
+            )
+          })}
+        </tbody>
+      </table>
     </div>
   )
 }

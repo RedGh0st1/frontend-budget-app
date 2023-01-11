@@ -1,5 +1,5 @@
 import React from "react"
-import TransactionsEditForm from "react"
+import TransactionsEditForm from "../Components/TransactionsEditForm"
 
 export default function Edit() {
   return (

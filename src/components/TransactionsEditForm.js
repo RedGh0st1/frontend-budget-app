@@ -1,6 +1,6 @@
 import React from "react"
 import axios from "axios"
-import { useNavigate, useParams } from "react-router-dom"
+import { Link, useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
 import { Form } from "react-bootstrap"
 
@@ -26,13 +26,15 @@ export default function TransactionsEditForm() {
       .get(`${API}/transactions/${index}`)
       .then((res) => setTransactions(res.data))
       .catch((err) => console.log(err))
-  })
+  }, [index])
+
   function handleSubmit(e) {
     e.preventDefault()
     axios
       .put(`${API}/transactions/${index}`, transaction)
       .then((res) => {
         setTransactions(res.data)
+        navigate(`/transactions/${index}`)
       })
       .catch((err) => console.log(err))
   }
@@ -98,6 +100,9 @@ export default function TransactionsEditForm() {
         </select>
         <input type="submit" />
       </Form>
+      <Link to={`/transactions/${index}`}>
+        <button>Go BACK!</button>
+      </Link>
     </div>
   )
 }

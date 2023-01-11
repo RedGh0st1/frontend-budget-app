@@ -2,17 +2,17 @@ import React from "react"
 import { useState } from "react"
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
+import { Button } from "react-bootstrap"
 const API = process.env.REACT_APP_API_URL
 
 export default function TransactionsNewform() {
   const navigate = useNavigate()
   const [transaction, setNewTransaction] = useState({
     item_name: "",
-    amount: "",
+    amount: 0,
     date: "",
     from: "",
     category: "",
-    paid: false,
   })
 
   function handleTextChange(e) {
@@ -24,7 +24,7 @@ export default function TransactionsNewform() {
     axios
       .post(`${API}/transactions`, transaction)
       .then(() => navigate(`/transactions`))
-      .catch((err) => console.log("*"))
+      .catch((err) => console.log("/*"))
   }
 
   return (
@@ -86,10 +86,10 @@ export default function TransactionsNewform() {
           <option value="vacation">Vacation</option>
           <option value="rent">Rent</option>
         </select>
-        <input type="submit" />
+        <br></br>
         <input type="submit" />
         <Link to="/transactions">
-          <button className="bK_btn">Back</button>
+          <Button className="bK_btn">Back</Button>
         </Link>
       </form>
     </div>
