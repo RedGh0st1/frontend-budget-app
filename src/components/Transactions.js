@@ -23,7 +23,7 @@ export default function Transactions() {
         <h3>Account Total:{accTotal}</h3>
       </div>
 
-      <table className="index_table">
+      <table className="table">
         <thead>
           <tr>
             <th>Date</th>

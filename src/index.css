@@ -63,3 +63,28 @@ code {
   box-shadow: rgb(97, 93, 93) 10px 10px 5px;
   text-align: center;
 }
+
+.table {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+
+.table thead tr th {
+  padding: 3rem 7rem;
+  position: relative;
+}
+
+.table tbody tr td {
+  padding: 2rem 8rem;
+  border-bottom: 0.5px dotted red;
+}
+tbody td:not(td:first-of-type):hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #8a1b79;
+}
