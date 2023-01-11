@@ -11,7 +11,6 @@ import Show from "./Pages/Show"
 
 // COMPONENTS
 import NavBar from "./Components/NavBar"
-import Footer from "./Components/Footer"
 
 // import "./App.css"
 
@@ -27,7 +26,6 @@ function App() {
         <Route path="/transactions/:index/edit" element={<Edit />} />
         <Route path="*" element={<FourZeroFour />} />
       </Routes>
-      <Footer />
     </>
   )
 }
