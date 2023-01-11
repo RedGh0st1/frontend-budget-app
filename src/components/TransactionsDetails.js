@@ -49,7 +49,7 @@ export default function TransactionsDetails() {
         </div>
         <div className="ShowNavigation">
           <div>
-            <Stack>
+            <Stack direction="horizontal">
               <Link to={`/transactions`}>
                 <Button variant="primary">Back</Button>
               </Link>
