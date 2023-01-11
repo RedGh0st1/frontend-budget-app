@@ -1,5 +1,5 @@
 import React from "react"
-import TransactionsNewForm from "../components/TransactionsNewForm"
+import TransactionsNewForm from "../Components/TransactionsNewForm"
 
 export default function New() {
   return (
