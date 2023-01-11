@@ -1,5 +1,4 @@
 body {
-  grid-template-columns: 1fr 3fr;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -17,19 +16,20 @@ code {
 .home {
   align-items: center;
   display: flex;
-  margin-top: 0vh;
+  margin-top: 2%;
   height: 85vh;
-  width: 175vh;
+  width: 174vh;
   font-size: 125rem;
   text-shadow: #b7f4c4 12px 8px 5px;
   color: #31569b;
   font-family: "Lucida Sans";
   margin-right: 10vh;
-  margin-left: vh;
+  margin-left: 1vh;
+  margin-top: 2vh;
   background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 100%;
 }
 
 .total {
@@ -45,7 +45,7 @@ code {
 .navbar {
   background-color: #1b8a2c;
   display: flex;
-  width: 100%;
+  width: 100vh;
   box-shadow: 12px 8px 5px rgb(93, 90, 90);
   align-items: flex-start;
   gap: "1rem";
