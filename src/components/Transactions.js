@@ -3,6 +3,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import Transaction from "./Transaction"
 import { Table } from "react-bootstrap"
+import { yellow } from "@mui/material/colors"
 const API = process.env.REACT_APP_API_URL
 
 export default function Transactions() {
@@ -20,8 +21,24 @@ export default function Transactions() {
   }, 0)
   return (
     <div className="index_transactions">
-      <div className="acc_total">
-        <h3>Account Total:{accTotal}</h3>
+      <div
+        className="acc_total"
+        style={{
+          color:
+            accTotal >= 1000
+              ? "green"
+              : accTotal >= 1
+              ? "orange"
+              : accTotal < 0
+              ? "red"
+              : null,
+        }}
+      >
+        <h3 className="total">
+          {" "}
+          Account Total :<br></br>
+          {accTotal}
+        </h3>
       </div>
 
       <Table striped bordered hover size="md">

@@ -1,4 +1,5 @@
 body {
+  grid-template-columns: 1fr 3fr;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -29,6 +30,10 @@ code {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.total {
+  text-align: center;
 }
 
 .home h1 {
@@ -83,8 +88,13 @@ code {
 .new_form {
   border: 1px solid black;
   background-color: #8a631b;
-  padding: 70px;
+  margin-right: 25px;
+  padding: 170px;
   margin: 1px 10px auto 5px;
   box-shadow: rgb(97, 93, 93) 10px 10px 5px;
   text-align: center;
+}
+
+Form {
+  text-align: left;
 }
