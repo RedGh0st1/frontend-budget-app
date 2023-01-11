@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
 code {
@@ -12,9 +13,33 @@ code {
     monospace;
 }
 
+.home {
+  align-items: center;
+  display: flex;
+  margin-top: 0vh;
+  height: 85vh;
+  width: 175vh;
+  font-size: 125rem;
+  text-shadow: #b7f4c4 12px 8px 5px;
+  color: #31569b;
+  font-family: "Lucida Sans";
+  margin-right: 10vh;
+  margin-left: vh;
+  background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home h1 {
+  padding: 25px;
+  margin-left: 75px;
+  margin-top: 35vh;
+  font-weight: bold;
+}
 .navbar {
   background-color: #1b8a2c;
-  display: grid;
+  display: flex;
   width: 100%;
   box-shadow: 12px 8px 5px rgb(93, 90, 90);
   align-items: flex-start;
@@ -29,7 +54,7 @@ code {
   color: khaki;
   box-shadow: rgb(170, 238, 160) 5px 2px 2px;
   margin-top: 8px;
-  margin-left: 135px;
+  margin-left: 255px;
 }
 
 .submit {
@@ -62,29 +87,4 @@ code {
   margin: 1px 10px auto 5px;
   box-shadow: rgb(97, 93, 93) 10px 10px 5px;
   text-align: center;
-}
-
-.table {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  height: 100%;
-}
-
-.table thead tr th {
-  padding: 3rem 7rem;
-  position: relative;
-}
-
-.table tbody tr td {
-  padding: 2rem 8rem;
-  border-bottom: 0.5px dotted red;
-}
-tbody td:not(td:first-of-type):hover {
-  transform: scale(1.05);
-  opacity: 0.9;
-}
-
-.table tbody tr:nth-child(odd) {
-  background-color: #8a1b79;
 }
