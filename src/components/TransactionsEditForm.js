@@ -2,7 +2,7 @@ import React from "react"
 import axios from "axios"
 import { Link, useNavigate, useParams } from "react-router-dom"
 import { useState, useEffect } from "react"
-import { Form } from "react-bootstrap"
+// import { form } from "react-bootstrap"
 
 const API = process.env.REACT_APP_API_URL
 
@@ -40,7 +40,7 @@ export default function TransactionsEditForm() {
   }
   return (
     <div className="edit">
-      <Form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <label htmlFor="item_name">Item Name:</label>
         <input
           id="item_name"
@@ -99,7 +99,7 @@ export default function TransactionsEditForm() {
           <option value="rent">Rent</option>
         </select>
         <input type="submit" className="submit" />
-      </Form>
+      </form>
       <Link to={`/transactions/${index}`}>
         <button className="btn_btn">Go BACK!</button>
       </Link>

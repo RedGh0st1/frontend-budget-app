@@ -3,7 +3,7 @@ import { useState } from "react"
 import axios from "axios"
 import { Link, useNavigate } from "react-router-dom"
 import { Button } from "react-bootstrap"
-import { Form } from "react-bootstrap"
+// import { form } from "react-bootstrap"
 const API = process.env.REACT_APP_API_URL
 
 export default function TransactionsNewform() {
@@ -30,7 +30,7 @@ export default function TransactionsNewform() {
 
   return (
     <div className="new_form">
-      <Form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <div className="insideform">
           <label htmlFor="item_name" className="insideform">
             <br></br>
@@ -100,7 +100,7 @@ export default function TransactionsNewform() {
         <Link to="/transactions">
           <Button className=" bk_btn">Back</Button>
         </Link>
-      </Form>
+      </form>
     </div>
   )
 }

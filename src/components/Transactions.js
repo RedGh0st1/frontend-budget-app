@@ -2,7 +2,7 @@ import React from "react"
 import { useState, useEffect } from "react"
 import axios from "axios"
 import Transaction from "./Transaction"
-import { Table } from "react-bootstrap"
+// import { Table } from "react-bootstrap"
 
 const API = process.env.REACT_APP_API_URL
 
@@ -41,7 +41,7 @@ export default function Transactions() {
         </h3>
       </div>
 
-      <Table className="table">
+      <table className="table">
         <thead>
           <tr>
             <th>Date</th>
@@ -61,7 +61,7 @@ export default function Transactions() {
             )
           })}
         </tbody>
-      </Table>
+      </table>
     </div>
   )
 }

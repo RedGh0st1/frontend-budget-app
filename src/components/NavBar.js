@@ -4,9 +4,9 @@ import { Link } from "react-router-dom"
 
 export default function NavBar() {
   return (
-    <Nav className="nav">
-      <Stack direction="horizontal" gap="4" className="mb-5">
-        <h4 className="me-auto">
+    <Nav className="navbar">
+      <Stack direction="horizontal" className="mb-5">
+        <h4 className="">
           <Link to="/">
             <Button className="transaction_btn">Home</Button>
           </Link>

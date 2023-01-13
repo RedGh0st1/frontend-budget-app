@@ -1,9 +1,11 @@
 .app {
   display: grid;
-  background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
+  margin: 0;
+  background: #8a641b;
+  /* background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: 100%; */
 }
 
 body {
@@ -14,7 +16,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0;
-  background-color: #1b418a;
 }
 
 code {
@@ -25,20 +26,19 @@ code {
 .home {
   align-items: center;
   display: flex;
-  margin-top: 2%;
-  height: 86vh;
-  width: 174vh;
+  height: 170%;
+  width: 100%;
+  background-color: #8a641b;
   font-size: 125rem;
   text-shadow: #b7f4c4 12px 8px 5px;
   color: #31569b;
   font-family: "Lucida Sans";
-  margin-right: 10vh;
-  margin-left: 1vh;
-  margin-top: 2vh;
-  /* background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
+  margin-left: 0vh;
+  margin-bottom: 2vh;
+  background-image: url("https://studentloanhero.com/wp-content/uploads/simple-budgeting-methods-to-help-you-live-your-best-life.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 100%; */
+  background-position: flex;
 }
 
 .total {
@@ -52,19 +52,20 @@ code {
   font-weight: bold;
 }
 .navbar {
-  background-color: #1b8a2c;
-  position: relative;
+  background-color: #1b418a;
   display: flex;
-  width: 130vh;
+  width: 90%;
   height: 14vh;
-  margin-left: 10%;
-  box-shadow: 12px 8px 5px rgb(93, 90, 90);
+  margin-left: 6%;
+  margin-right: 6%;
+  box-shadow: 12px 8px 5px #1b8a2d;
   align-items: flex-start;
 }
 
 .navbar h1 {
   text-decoration: none;
 }
+
 .transaction_btn {
   background-color: cadetblue;
   color: khaki;
@@ -75,12 +76,13 @@ code {
 
 .submit {
   display: flex;
-  background-color: rgb(26, 50, 135);
+  background-color: #1b418a;
   width: 45%;
   color: khaki;
   box-shadow: rgb(170, 238, 160) 5px 10px 5px;
   margin-top: 8px;
   margin-right: 15px;
+  border-radius: 5%;
 }
 
 .submit:hover {
@@ -100,10 +102,21 @@ code {
 
 .new_form {
   display: flex;
-  background-color: #8a631b;
-  border: 1px solid #1b418a;
+  background-color: #1b418a;
+  border: 3px solid #8a1b78;
   width: 60%;
   height: 20%;
+  margin: 5% 20% auto 20%;
+  box-shadow: #1b8a2d 10px 10px 5px;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.edit {
+  background-color: #8a641b;
+  border: 1px solid #1b418a;
+  width: 50%;
+  height: 40%;
   margin: 5% 20% auto 20%;
   box-shadow: rgb(97, 93, 93) 10px 10px 5px;
   align-items: center;
@@ -128,5 +141,14 @@ Form {
   height: 100%;
   margin-bottom: 100%;
   padding: 10px;
-  background: #1b418a;
+  background: #8a641b;
+}
+
+@media (max-width: 780px) {
+  .navbar {
+    width: 50%;
+  }
+  .transaction_btn {
+    width: 50%;
+  }
 }
