@@ -1,11 +1,11 @@
 import React from "react"
-import { Button, Container, Stack } from "react-bootstrap"
+import { Button, Nav, Stack } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
 export default function NavBar() {
   return (
-    <Container className="navbar">
-      <Stack direction="horizontal" gap="4" className="mb-4">
+    <Nav className="nav">
+      <Stack direction="horizontal" gap="4" className="mb-5">
         <h4 className="me-auto">
           <Link to="/">
             <Button className="transaction_btn">Home</Button>
@@ -23,6 +23,6 @@ export default function NavBar() {
           </Link>
         </h4>
       </Stack>
-    </Container>
+    </Nav>
   )
 }

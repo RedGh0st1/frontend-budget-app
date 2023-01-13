@@ -39,8 +39,7 @@ export default function TransactionsDetails() {
             {transaction.date}
           </p>
           <p>
-            <span>From:</span>
-            {transaction.from}
+            <span>From: </span> {transaction.from}
           </p>
           <p>
             <span>Category:</span>

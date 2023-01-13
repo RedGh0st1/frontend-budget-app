@@ -16,7 +16,7 @@ import NavBar from "./Components/NavBar"
 
 function App() {
   return (
-    <>
+    <div className="app">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/transactions/:index/edit" element={<Edit />} />
         <Route path="*" element={<FourZeroFour />} />
       </Routes>
-    </>
+    </div>
   )
 }
 export default App

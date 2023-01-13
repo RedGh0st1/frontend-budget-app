@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 import axios from "axios"
 import Transaction from "./Transaction"
 import { Table } from "react-bootstrap"
-import { yellow } from "@mui/material/colors"
+
 const API = process.env.REACT_APP_API_URL
 
 export default function Transactions() {
@@ -20,7 +20,7 @@ export default function Transactions() {
     return (acc += curr.amount)
   }, 0)
   return (
-    <div className="index_transactions">
+    <div className="table">
       <div
         className="acc_total"
         style={{
@@ -41,7 +41,7 @@ export default function Transactions() {
         </h3>
       </div>
 
-      <Table striped bordered hover size="md">
+      <Table className="table">
         <thead>
           <tr>
             <th>Date</th>
