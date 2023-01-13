@@ -24,25 +24,31 @@ export default function TransactionsDetails() {
   }
   return (
     <Card className="details" style={{ textAlign: "center" }}>
-      <Card.Body>
+      <Card.Body className="sm">
         <Card.Title>
           <h1>Budget Details</h1>
         </Card.Title>
         <div className="more_details">
-          <h3 className="item-name"> Name: {transaction.item_name}</h3>
+          <h3 className="item-name">
+            {" "}
+            Name
+            <br></br>
+            {transaction.item_name}
+          </h3>
+          <hr></hr>
           <p>
-            <span>Amount:</span>
+            <span>Amount: </span>
             {transaction.amount}
           </p>
           <p>
-            <span>Date:</span>
+            <span>Date: </span>
             {transaction.date}
           </p>
           <p>
             <span>From: </span> {transaction.from}
           </p>
           <p>
-            <span>Category:</span>
+            <span>Category: </span>
             {transaction.category}
           </p>
         </div>
