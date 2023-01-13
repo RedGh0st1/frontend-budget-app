@@ -42,7 +42,7 @@ export default function Transactions() {
       </div>
 
       <table className="table">
-        <thead>
+        <thead className="t-head">
           <tr>
             <th>Date</th>
             <th>Item</th>
